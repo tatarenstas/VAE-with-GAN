@@ -1,14 +1,12 @@
-import numpy as np
-import matplotlib.pyplot as plt
 import time
-
-from tensorflow.keras.datasets import mnist
-from tensorflow import keras
-import keras.backend as K
+import numpy as np
 import tensorflow as tf
-from tensorflow.keras.layers import Dense, Flatten, Reshape, Input, Lambda, BatchNormalization, Dropout
+import keras.backend as K
+from tensorflow import keras
+import matplotlib.pyplot as plt
+from tensorflow.keras.datasets import mnist
 from tensorflow.keras.layers import Conv2D, LeakyReLU
-
+from tensorflow.keras.layers import Dense, Flatten, Reshape, Input, Lambda, BatchNormalization, Dropout
 
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
 
